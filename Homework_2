@@ -1,0 +1,25 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string level;
+        string role;
+        string game;
+
+        Console.WriteLine("Введите ваш уровень: ");
+        level = Console.ReadLine();
+
+        Console.WriteLine("Введите вашу роль в игре: ");
+        role = Console.ReadLine();
+
+        Console.WriteLine("А так же вашу игру: ");
+        game = Console.ReadLine(); 
+        
+        Console.Clear();
+        Console.WriteLine("Ваша роль {1}, с уровнем развития {0} в игре {2}.",
+        level, role,game.ToLower());
+        Console.WriteLine();
+    }
+}

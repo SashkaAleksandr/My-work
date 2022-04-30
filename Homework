@@ -1,0 +1,20 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        //1-HomeWork.Console.WriteLine("ЯЮниор");
+
+        int time = 3;
+        float speed = 45;
+        decimal number = 156.258m;
+        string name = "Alex";
+        char test = ' ';
+        bool isMooving = false;
+        long cash = 70000000000;
+        double dash = 13.4f;
+        byte power = 2;
+        sbyte point = 120;
+    }
+}

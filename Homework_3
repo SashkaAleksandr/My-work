@@ -1,0 +1,19 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int timeOnePerson = 10;
+        int numberPeople;
+
+        Console.WriteLine("Введите колличество людей в очереди: ");
+        numberPeople = Convert.ToInt32(Console.ReadLine());
+
+        int hoursQueueTime = numberPeople * timeOnePerson / 60;
+        int minQueueTime = numberPeople * timeOnePerson % 60;
+
+        Console.WriteLine(" Вы должно примерно отстаять " + hoursQueueTime + " час " + 
+                                                          minQueueTime + " минут. " );
+    }
+}

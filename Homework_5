@@ -9,11 +9,8 @@ internal class Program
 
         Console.WriteLine(" Ваше фамилие " + surname + " Ваше имя " + name);
 
-        Console.WriteLine(" Введите ваше имя: ");
-        name = Console.ReadLine();
-        Console.Write("Введите ваше фамилие: ");
-        surname = Console.ReadLine();
-
-        Console.WriteLine(" Ваше имя " + name + " Ваше фамилие " + surname);
+        string temp = name;
+        string name = surname;
+        string temp = name;
     }
 }

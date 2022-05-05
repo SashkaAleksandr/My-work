@@ -10,7 +10,9 @@ internal class Program
         Console.WriteLine(" Ваше фамилие " + surname + " Ваше имя " + name);
 
         string temp = name;
-        string name = surname;
-        string temp = name;
+        name = surname;
+        surname = temp;
+
+        Console.WriteLine(" Ваше фамилие " + temp + " Ваше имя " + name);
     }
 }

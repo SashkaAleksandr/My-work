@@ -1,3 +1,4 @@
+
 using System;
 
 internal class Program
@@ -6,7 +7,7 @@ internal class Program
     {
         int gold;
         int crystalPrise = 5;
-        int numberCrystals;
+        int countCrystals;
         bool enoughGold;
 
         Console.WriteLine("Введите ваше колличество золота: ");
@@ -15,14 +16,14 @@ internal class Program
                           "сейчас их цена составляет " + crystalPrise + " золота. ");
 
         Console.WriteLine("Сколько кристалов вам нужно: ");
-        numberCrystals = Convert.ToInt32(Console.ReadLine());
+        countCrystals = Convert.ToInt32(Console.ReadLine());
 
-        enoughGold = gold > numberCrystals * crystalPrise;
+        enoughGold = gold > countCrystals * crystalPrise;
 
-        numberCrystals *= Convert.ToInt32(enoughGold);
-        gold -= numberCrystals * crystalPrise;
+        countCrystals *= Convert.ToInt32(enoughGold);
+        gold -= countCrystals * crystalPrise;
 
-        Console.WriteLine("У вас куплено " + numberCrystals + 
-            " кристал(ов) и остаток равен " + gold + " золота. ");        
+        Console.WriteLine("У вас куплено " + countCrystals +
+            " кристал(ов) и остаток равен " + gold + " золота. ");
     }
 }

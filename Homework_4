@@ -1,0 +1,28 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int gold;
+        int crystalPrise = 5;
+        int numberCrystals;
+        bool enoughGold;
+
+        Console.WriteLine("Введите ваше колличество золота: ");
+        gold = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Могу предложить вам купить кристалы, " +
+                          "сейчас их цена составляет " + crystalPrise + " золота. ");
+
+        Console.WriteLine("Сколько кристалов вам нужно: ");
+        numberCrystals = Convert.ToInt32(Console.ReadLine());
+
+        enoughGold = gold > numberCrystals * crystalPrise;
+
+        numberCrystals *= Convert.ToInt32(enoughGold);
+        gold -= numberCrystals * crystalPrise;
+
+        Console.WriteLine("У вас куплено " + numberCrystals + 
+            " кристал(ов) и остаток равен " + gold + " золота. ");        
+    }
+}

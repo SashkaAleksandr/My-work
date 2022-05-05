@@ -13,6 +13,6 @@ internal class Program
         name = surname;
         surname = temp;
 
-        Console.WriteLine(" Ваше фамилие " + temp + " Ваше имя " + name);
+        Console.WriteLine(" Ваше фамилие " + surname + " Ваше имя " + name);
     }
 }

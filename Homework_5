@@ -1,0 +1,19 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string surname = "Sasha";
+        string name = "Raskolnikow";
+
+        Console.WriteLine(" Ваше фамилие " + surname + " Ваше имя " + name);
+
+        Console.WriteLine(" Введите ваше имя: ");
+        name = Console.ReadLine();
+        Console.Write("Введите ваше фамилие: ");
+        surname = Console.ReadLine();
+
+        Console.WriteLine(" Ваше имя " + name + " Ваше фамилие " + surname);
+    }
+}

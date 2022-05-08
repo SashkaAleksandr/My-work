@@ -4,15 +4,15 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int kick;
+        int countKick;
 
         Console.WriteLine(" Сколько раз ударить вашего соперника ");
-        kick = Convert.ToInt32(Console.ReadLine());
+        countKick = Convert.ToInt32(Console.ReadLine());
 
-        while (kick-- > 1)
+        while (countKick-- > 1)
         {
-            Console.WriteLine(" Удар " + kick);
+            Console.WriteLine(" Удар " + countKick);
         }
-        Console.WriteLine(" Ваш противник побеждён!!! ");
+        Console.WriteLine(" Ваш противник побеждён!!!");
     }
 }

@@ -1,0 +1,18 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int kick;
+
+        Console.WriteLine(" Сколько раз ударить вашего соперника ");
+        kick = Convert.ToInt32(Console.ReadLine());
+
+        while (kick-- > 1)
+        {
+            Console.WriteLine(" Удар " + kick);
+        }
+        Console.WriteLine(" Ваш противник побеждён!!! ");
+    }
+}

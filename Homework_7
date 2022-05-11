@@ -1,0 +1,30 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string pasword = "game";
+        string userInput;
+        int tryCount = 3;
+
+        Console.WriteLine("Угадай секретное слово, а взамен расскажу тебе мой секрет");
+        Console.WriteLine("На то у тебя " + tryCount + " попытки");
+
+        for (int i = 0; i < tryCount; i++)
+        {
+            Console.WriteLine("Введи пороль: ");
+            userInput = Console.ReadLine();
+
+            if (userInput == pasword)
+            {
+                Console.WriteLine("Секрета в общем то нет, просто хотел с тобой поиграть");
+                break;  
+            }
+            else
+            {
+                Console.WriteLine("У тебя осталось - " + (tryCount - i - 1) + " попытoк.");
+            }
+        }
+    }
+}

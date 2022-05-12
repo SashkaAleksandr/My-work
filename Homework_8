@@ -1,0 +1,25 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string userInput = "exit";
+        bool isExit = false;
+
+        Console.WriteLine("Это программа позволяет тебе понять кто я для тебе");
+        Console.WriteLine("Если захочешь выйти то просто напечатай " + userInput);
+
+        while (isExit == false)
+        {
+            Console.WriteLine("Я твой...");
+            userInput = Console.ReadLine();
+
+            if (userInput == "exit")
+            {
+              isExit = true;
+            }
+        }
+
+    }
+}

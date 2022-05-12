@@ -1,0 +1,15 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int number = 5;
+        int stepNumber = 7;
+
+        for (number = 5; number < 101; number += stepNumber)
+        {
+            Console.WriteLine(number);
+        }
+    }
+}

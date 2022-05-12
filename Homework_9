@@ -8,7 +8,7 @@ internal class Program
         int stepNumber = 7;
         int finalNumber = 101;
 
-        for (number = 5; number < finalNumber; number += stepNumber)
+        for (number = number + stepNumber; number < finalNumber; number += stepNumber)
         {
             Console.WriteLine(number);
         }

@@ -1,0 +1,27 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string name;
+        string game;
+        string role;
+        int level;
+
+        Console.WriteLine("Как вас зовут: ");
+        name = Console.ReadLine();
+
+        Console.WriteLine("Назовите RPG игру в которую играете: ");
+        game = Console.ReadLine();
+
+        Console.WriteLine("За какой класс вы играете: ");
+        role = Console.ReadLine();
+
+        Console.WriteLine("Какой ваш уровень: ");
+        level = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Вас зовут " + name + " вы играете за класс " +
+                           role + " и ваш уровень " + level);
+    }
+}

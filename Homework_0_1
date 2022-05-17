@@ -6,13 +6,13 @@ internal class Program
     {
         int countPictures = 52;
         int countRows = 3;
-        int remains;
-        int output;
+        int superMeasurePictures;
+        int filledRows;
 
-        output = 52 / 3;
-        remains = 52 % 3;
+        filledRows = countPictures / countRows;
+        superMeasurePictures = countPictures % countRows;
 
-        Console.WriteLine("Полностью заполненных рядов " + output);
-        Console.WriteLine("Картинок сверх меры " + remains);
+        Console.WriteLine("Полностью заполненных рядов " + filledRows);
+        Console.WriteLine("Картинок сверх меры " + superMeasurePictures);
     }
 }

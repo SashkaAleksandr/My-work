@@ -1,0 +1,18 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int countPictures = 52;
+        int countRows = 3;
+        int remains;
+        int output;
+
+        output = 52 / 3;
+        remains = 52 % 3;
+
+        Console.WriteLine("Полностью заполненных рядов " + output);
+        Console.WriteLine("Картинок сверх меры " + remains);
+    }
+}

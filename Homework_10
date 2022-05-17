@@ -1,0 +1,27 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int startNumber = 0;
+        int finalNumber = 101;
+        int number;
+        int sum = 0;
+        int multiNumber_1 = 3;
+        int multiNumber_2 = 5;
+
+        Random rand = new Random();
+        number = rand.Next(startNumber, finalNumber);
+        Console.WriteLine(number);
+
+        for (int i = 0; i <= number; i++)
+        {
+            if (i % multiNumber_1 == 0 || i % multiNumber_2 == 0)
+            {
+                sum += i; 
+            }
+        }
+        Console.WriteLine(sum);
+    }
+}

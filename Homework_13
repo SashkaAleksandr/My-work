@@ -1,0 +1,24 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int maxNumber = 100;
+        int minNumber = 1;
+        int magicNumber;
+        int degree = 2;
+        int counter = 1;
+        int numberDegrees = 0;
+
+        Random random = new Random();
+        magicNumber = random.Next(maxNumber);
+       
+        for (counter = counter; counter <= magicNumber; counter*=degree)
+        {
+            numberDegrees++; 
+        }
+        Console.WriteLine("число " + magicNumber + " , минимальная степень " + numberDegrees +
+            " ,число в найденной степени " + counter);
+    }
+}

@@ -6,6 +6,8 @@ internal class Program
     {
         string name;
         char symbol;
+        string border = "";
+        int countAddSymbols = 2;
 
         Console.WriteLine("Введите ваше имя: ");
         name = Console.ReadLine();
@@ -15,24 +17,13 @@ internal class Program
         Console.WriteLine("Каким символом желаете оформить: ");
         symbol = Convert.ToChar(Console.ReadLine());
 
-        for (int i = 1; i <= lenght + 2; i++)
+        for (int i = 1; i <= lenght + countAddSymbols; i++)
         {
-            Console.Write(symbol);
-        }
-        Console.WriteLine();
-
-        if (lenght == lenght)
-        {
-            for (int j = 1; j <= 1; j++)
-            {
-                Console.WriteLine(symbol + name + symbol);
-            }
+            border += symbol;
         }
 
-        for (int a = 1; a <= lenght + 2; a++)
-        {
-            Console.Write(symbol);
-        }
-        Console.WriteLine();
+        Console.WriteLine(border);
+        Console.WriteLine(symbol + name + symbol);
+        Console.WriteLine(border);
     }
 }
